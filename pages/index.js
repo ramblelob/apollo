@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "./components/Header";
 import style from "../style/index.less";
+import MovieList from "./containers/MovieList";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <main>
         <div className="main">
           <Header />
-          <h1 className="title m-5">Welcome to Apollo Mock Hulu</h1>
+          <MovieList />
         </div>
       </main>
     </div>

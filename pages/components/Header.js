@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Head from "next/head";
 import { Navbar, Nav } from "react-bootstrap";
 import { connect } from "react-redux";
@@ -15,9 +16,11 @@ function Header(props) {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <a className="text-white mr-2 mt-1">nav bar placeholder</a>
+          </Nav>
           <Nav>
-            <Nav.Link>Sign In</Nav.Link>
-            <Nav.Link>Register</Nav.Link>
+            <a className="text-white mr-2 mt-1">Sign in</a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

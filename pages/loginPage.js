@@ -3,18 +3,18 @@ import { connect } from "react-redux";
 
 import Header from "./components/Header";
 
-function Home(props) {
+function Login(props) {
   return (
     <div className="xcontainer">
       <Head>
-        <title>Home</title>
+        <title>Log in</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <div className="main">
           <Header />
-          <h1 className="title">Home Page</h1>
+          <h1 className="title">Log in Page</h1>
         </div>
       </main>
     </div>
@@ -27,4 +27,4 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
