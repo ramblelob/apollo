@@ -24,12 +24,12 @@ const useStyles = makeStyles({
     justifyContent: "space-between",
   },
 });
-const MovieCard = ({ id, imgSrc, title, rating, favorite }) => {
+const MovieCard = () => {
   const classes = useStyles();
   const history = useHistory();
   return (
     <Card className={classes.root} raised>
-      Card
+      Card Placeholder
     </Card>
   );
 };

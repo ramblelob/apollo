@@ -7,24 +7,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleFavoriteAction } from "../../redux/actions/favoriteInfoActions";
 
 const MovieListBase = ({ movieList }) => {
+  console.log("[MovieListBase] movieList", movieList);
   const dispatch = useDispatch();
 
   const handleToggleFavorite = (id) => {};
   return (
     <MovieGrid>
       {movieList.map((movie) => {
-        return (
-          <MovieCard
-            key={movie.id}
-            // id={}
-            // imgSrc={}
-            // title={}
-            // rating={}
-            // myRating={}
-            // favorite={}
-            // onToggleFavorite={}
-          />
-        );
+        return <MovieCard />;
       })}
     </MovieGrid>
   );

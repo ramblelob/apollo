@@ -44,8 +44,8 @@ const reducer = (state = initialState, action) => {
     case Actions.LOAD_MOVIE_LIST_FINISHED: {
       const { results, category, page } = action.payload;
       const movieData = state.movieData;
-      console.log("In movieListReducer current Movie data form server");
-      console.log(movieData);
+
+      console.log("[movieListReducer] movieData ", movieData);
       return {
         ...state,
         loading: false,
